@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.all{
+    width: 600px;
+    margin: 30px auto 0;
+
+}
+.container{
+    background-color: rgb(229, 191, 191);
+    width: 600px;
+    margin: 30px auto 0;
+
+
+}
+
+.add_task{
+    position: relative;
+    padding: 15px;
+
+    background-color: #07b0b3f7;
+    /* margin-bottom: 50px; */
+    height: 80px;
+
+}
+
+.add_task input{
+    display:  -ms-inline-grid;
+    border: none;
+    /* padding: 10px 15px; */
+    width: calc(100% - 10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    /* width: 80%; */
+    color: white;
+}
+.add_task input:focus{
+    outline: none;
+}
+
+
+
+.all_items{
+    padding: 15px;
+    background-color: rgb(240, 234, 245);
+    /* height: 50px; */
+    /* margin: 5%; */
+}
+.all_items div{
+    align-items: flex-end;
+    background-color: rgb(175, 179, 175);
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+.item{
+    /* align-items: flex-end;
+    background-color: green;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px; */
+}
+
+button{
+    /* width: 80px; */
+    /* height: 50px; */
+    /* font-weight: bolder; */
+    /* border-radius: 20px; */
+    /* background-color: blueviolet; */
+
+
+}
+.no_task_mes{
+    /* width: 80px; */
+    /* height: 50px; */
+    font-weight: bolder;
+    /* border-radius: 20px; */
+    /* color: blueviolet; */
+    font-size: 30px;
+    
+}
+.add{
+    /* width: 15px; */
+    /* width: 10px; */
+    /* margin-top: -50px; */
+    background-color: rgb(248, 248, 254);
+    position: absolute;
+    height: 43px;
+    right: 12px;
+    border-radius: 50%;
+    /* its important to  equal the height to be in the line */
+    line-height: 43px;
+    text-align: center;
+    font-size: 40px;
+    transition: transform .3s ;
+}
+.add:hover{
+    transform: rotate(90deg);
+}
+.delete{
+    position: absolute;
+    background-color: red;
+    right: 3px;
+    bottom: 10px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+
+
+}
+footer{
+    display: flex;
+    /* align-content: space-around; */
+    /* align-content: flex-end; */
+    /* align-items: flex-end; */
+    /* background-color: hotpink; */
+
+}
+
+.task_stats {
+    /* align-self: flex-end;mmmm */
+    /* background-color: forestgreen; */
+    margin-right: auto;
+
+}
+    .task_stats span{
+    background-color: red;
+    padding: 2px;
+    border-radius: 10px;
+    align-items: flex-end;
+}
+.task_complated span{
+    background-color: aqua;
+    padding: 2px;
+    border-radius: 10px;
+
+}
+.finished{
+    background-color: rgb(237, 244, 41);
+    font-style:italic;
+    color: red;
+    text-decoration:line-through;
+}
